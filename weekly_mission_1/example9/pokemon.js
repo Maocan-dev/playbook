@@ -5,20 +5,12 @@ class pokemon {
   }
   sayHello() {
     this.count++;
-    console.log(`Hi, I'm ${this.name}`);
+    console.log(`Mi pokemon ${this.name} te saluda!!!`);
   }
-  jump(times) {
-    for (let i = 0; i < times; i++) {
-      this.count++;
-    }
-    console.log(`${this.name} is jumping`);
-  }
-  showJumps() {
-    console.log(`${this.name} has jumped ${this.count} times`);
+  sayMessage(message) {
+    this.count++;
+    console.log(`Mi pokemon ${this.name} dice: ${message}`);
   }
 }
-/* module.exports = new pokemon("pikachu");
-module.exports.pokemon = pokemon; */
 
-//export class pokemon
 module.exports = pokemon;
